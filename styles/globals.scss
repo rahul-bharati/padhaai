@@ -1,0 +1,262 @@
+/* Don't Usecontainer', use 'container-fluid' since we're adding custom padding.  */
+/* Use 'xs' for mobile devices, it's a custom breakpoint added in tailwind.config.js  */
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.text-theme {
+  color: #f8c933;
+}
+
+.bg-theme {
+  background: #f8c933;
+}
+
+.dropdown-menu {
+  right: 0;
+}
+
+.dropdown-menu a:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #f8c933;
+}
+.dropdown-submenu {
+  right: -256px;
+  top: 0;
+}
+
+.slider-section .card {
+  min-height: 360px;
+}
+
+.min-h-48 {
+  min-height: 48px;
+}
+
+.liveLocation span {
+  vertical-align: middle;
+}
+
+.img-overly span {
+  display: block !important;
+}
+.img-overly:after,
+.imgOverly {
+  content: "";
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.featuresSection {
+  background: #fcfcfc;
+}
+
+.bg-dark-green {
+  background: #025f98;
+}
+
+.main-container {
+  max-width: 2560px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.bg-light {
+  background: #fcfcfc;
+}
+
+.IntroducingExpert {
+  background: url("/bg-1.webp") no-repeat;
+  width: calc(50% + 24px);
+  background-size: cover;
+  background-position: 50%;
+  padding: 100px 0;
+}
+
+.CourseCollection {
+  background: url("/bg-2.webp") no-repeat;
+  width: calc(50% + 24px);
+  background-size: cover;
+  background-position: 50%;
+  padding: 100px 0;
+  margin-left: -48px;
+  clip-path: polygon(
+    -1px calc(100% + 1px),
+    -1px calc(50% + 24px),
+    16px calc(50% + 24px),
+    16px calc(50% + 8px),
+    32px calc(50% + 8px),
+    32px calc(50% - 8px),
+    48px calc(50% - 8px),
+    48px calc(50% - 24px),
+    48px -1px,
+    calc(100% + 1px) -1px,
+    calc(100% + 1px) calc(100% + 1px)
+  );
+}
+
+.card-item span {
+  display: block !important;
+}
+
+.IntroducingExpert,
+.CourseCollection {
+  width: 100%;
+}
+
+.CourseCollection {
+  clip-path: polygon(
+    calc(100% + 1px) -1px,
+    calc(100% - 16px) -1px,
+    calc(100% - 16px) 16px,
+    calc(100% - 32px) 16px,
+    calc(100% - 32px) 32px,
+    calc(100% - 48px) 32px,
+    calc(100% - 48px) 48px,
+    -1px 48px,
+    -1px calc(100% + 1px),
+    calc(100% + 1px) calc(100% + 1px)
+  );
+  margin-top: -60px;
+  margin-left: 0;
+}
+
+.footer h4 {
+  display: flex;
+  align-items: center;
+  border-bottom: 0px solid #f8c933;
+  padding-bottom: 5px;
+  justify-content: space-between;
+}
+
+.leading-tight {
+  line-height: 1.25 !important;
+}
+.bg-yellowlight {
+  background: #fff9e4;
+}
+.bg-themeColor {
+  background-color: #f9c933;
+}
+.text-themeColor {
+  color: #f9c933;
+}
+.border-themeColor {
+  border-color: #f9c933;
+}
+select:not(.footer select) {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+  background-position: right 0.5rem center;
+  background-repeat: no-repeat;
+  background-size: 1.5em 1.5em;
+  padding-right: 2.5rem;
+  -webkit-print-color-adjust: exact;
+  color-adjust: exact;
+}
+.tabs .active {
+  margin-bottom: -1px;
+}
+.sidebar-nav span {
+  vertical-align: middle;
+}
+.sidebar-nav .active {
+  background: #f9ca32;
+}
+/* Mobile (xs)  */
+@media (min-width: 320px) {
+  .slider-section .card img {
+    width: 150px !important;
+    height: 150px !important;
+  }
+
+  /* Horizontal and Vertical Padding  */
+  .container-fluid {
+    padding: 50px 30px;
+  }
+
+  /* Header, only Horizontal Padding  */
+  .container-fluid.zeroVerticalPad {
+    padding: 4px 30px;
+  }
+
+  /* Scroll Slider, only Vertical Padding  */
+  .container-fluid.zeroHorizontalPad {
+    padding: 50px 0;
+  }
+}
+
+/* Tablet (sm)  */
+@media (min-width: 640px) {
+  /* Horizontal and Vertical Padding  */
+  .container-fluid {
+    padding: 80px 60px;
+  }
+
+  /* Header, only Horizontal Padding  */
+  .container-fluid.zeroVerticalPad {
+    padding: 10px 60px;
+  }
+
+  /* Scroll Slider, only Vertical Padding  */
+  .container-fluid.zeroHorizontalPad {
+    padding: 80px 0;
+  }
+}
+
+/* Tablet (md)  */
+@media (min-width: 768px) {
+}
+
+/* Desktop (lg) */
+@media (min-width: 1024px) {
+  .NavContainer {
+    display: flex !important;
+  }
+
+  /* Horizontal and Vertical Padding  */
+  .container-fluid {
+    padding: 100px 100px;
+  }
+
+  /* Header, only Horizontal Padding  */
+  .container-fluid.zeroVerticalPad {
+    padding: 0 100px;
+  }
+
+  /* Scroll Slider, only Vertical Padding  */
+  .container-fluid.zeroHorizontalPad {
+    padding: 100px 0;
+  }
+}
+
+/* Desktop (xl)  */
+@media (min-width: 1280px) {
+}
+
+/* Desktop (2xl)  */
+@media (min-width: 1536px) {
+  /* Container Breakpoint  */
+  .container-fluid {
+    max-width: 1420px;
+    margin: 0 auto;
+  }
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
