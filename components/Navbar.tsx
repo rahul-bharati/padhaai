@@ -23,7 +23,7 @@ const Navbar: NextComponentType = () => {
   const [showMe, setShowMe] = useToggle(false);
   return (
     <>
-      <header className="bg-black fixed top-0 left-0 w-full z-10">
+      <header className="bg-black fixed top-0 left-0 w-full z-10 border-b-2 border-b-white">
         <div className="container-fluid mx-auto px-4 zeroVerticalPad py-6">
           <nav className="flex items-center justify-between flex-wrap">
             <div className="flex items-center flex-shrink-0 text-white lg:mr-6">
@@ -205,7 +205,7 @@ const Navbar: NextComponentType = () => {
                   <span className="font-bold"> Solved Questions</span>
                 </a>
               </Link>
-              <Link href="#" passHref>
+              <Link href="/doubt-space" passHref>
                 <a className="block lg:inline-block text-white lg:pl-6 lg:pr-12 py-4 hover:text-primary">
                   <span className="block text-sm uppercase text-theme">
                     &nbsp;

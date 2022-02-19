@@ -2,21 +2,23 @@ import type { NextPage } from "next";
 import Campuses from "../components/Campuses";
 import ChooseUs from "../components/ChooseUs";
 import Feature from "../components/Feature";
-import Footer from "../components/Footer";
 import Hero from "../components/Hero";
-import Navbar from "./../components/Navbar";
+import Impact from "../components/Impact";
+import Download from "./../components/Download";
+import Masterclass from "./../components/MasterClass";
+import GurucoolCTA from "../components/GurucoolCTA";
 
 const Home: NextPage = () => {
   return (
     <>
-      <Navbar />
-      <main className="main-container">
-        <Hero />
-        <Campuses />
-        <Feature />
-        <ChooseUs />
-      </main>
-      <Footer />
+      <Hero />
+      <Campuses />
+      <Masterclass />
+      <GurucoolCTA />
+      <Feature />
+      <ChooseUs />
+      <Impact />
+      <Download />
     </>
   );
 };
