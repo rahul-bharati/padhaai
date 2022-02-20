@@ -9,7 +9,7 @@ import Link from "next/link";
 const Hero = () => {
   return (
     <>
-      <section className="slider-section">
+      <section className="slider-section mt-[62px]">
         <div className="container-fluid mx-auto pb-0">
           <div className="lg:flex mb-4 -mx-3 lg:items-center">
             <div className="lg:w-[60%] w-full px-3 lg:mb-0 mb-9">

@@ -10,10 +10,10 @@ const Masterclass: NextComponentType = () => {
   return (
     <>
       <section className="slider-section bg-black">
-        <div className="container-fluid mx-auto">
-          <h2 className="text-4xl md:text-[52px] font-bold text-white flex pb-[50px]">
+        <div className="container-fluid mx-auto overflow-x-hidden">
+          <h2 className="text-2xl md:text-[52px] font-bold text-white flex md:pb-[50px] pb-[10px]">
             <span className="text-primary inline-block">Gurucool&nbsp;</span>
-            Originals&nbsp;<sup className="text-lg">Free</sup>
+            Originals&nbsp;<sup className="text-sm md:text-lg">Free</sup>
           </h2>
           <div className="pt-[30px]">
             <Swiper

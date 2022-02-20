@@ -9,7 +9,7 @@ const Impact: NextComponentType = () => {
     <>
       <section className="slider-section">
         <div className="container-fluid mx-auto">
-          <div className="lg:flex mb-4 -mx-3 lg:items-center">
+          <div className="flex flex-col md:flex-row mb-4 -mx-3 justify-center lg:items-center">
             <div className="lg:w-[60%] w-full px-3 lg:mb-0 mb-9">
               <h2 className="text-black leading-tight lg:text-[56px] text-4xl font-bold mb-9">
                 A moonshot

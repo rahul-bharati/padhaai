@@ -16,8 +16,8 @@ const Findings: NextComponentType = () => {
           <h4 className="lg:text-5xl font-semibold mb-20">
             This is what we <span className="text-primary">found:</span>
           </h4>
-          <div className="mt-5 flex md:justify-between justify-center flex-wrap">
-            <div className="text-center me-2 mb-4">
+          <div className="mt-5 flex lg:justify-between justify-center flex-wrap w-[100%]">
+            <div className="text-center mx-2 mb-4">
               <div className={styles["progress-circle"]}>
                 <CircularProgressbarWithChildren
                   background
@@ -41,7 +41,7 @@ const Findings: NextComponentType = () => {
                 </CircularProgressbarWithChildren>
               </div>
             </div>
-            <div className="text-center me-2 mb-4">
+            <div className="text-center mx-2 mb-4">
               <div className={styles["progress-circle"]}>
                 <CircularProgressbarWithChildren
                   background
@@ -65,7 +65,7 @@ const Findings: NextComponentType = () => {
                 </CircularProgressbarWithChildren>
               </div>
             </div>
-            <div className="text-center me-2 mb-4">
+            <div className="text-center mx-2 mb-4">
               <div className="progressBar">
                 <div className={styles["progress-circle"]}>
                   <CircularProgressbarWithChildren
@@ -91,7 +91,7 @@ const Findings: NextComponentType = () => {
                 </div>
               </div>
             </div>
-            <div className="text-center me-2 mb-4">
+            <div className="text-center mx-2 mb-4">
               <div className="progressBar">
                 <div className={styles["progress-circle"]}>
                   <CircularProgressbarWithChildren
@@ -119,7 +119,7 @@ const Findings: NextComponentType = () => {
                 </div>
               </div>
             </div>
-            <div className="text-center me-2 mb-4">
+            <div className="text-center mx-2 mb-4">
               <div className="progressBar">
                 <div className={styles["progress-circle"]}>
                   <CircularProgressbarWithChildren
